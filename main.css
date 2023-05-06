@@ -1,0 +1,168 @@
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: assets("harrypottermain-bg.png");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+
+.bg img {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+header {
+  margin: 10px;
+}
+
+.sort-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#sort-btn-clr button {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  margin: 25px 0px;
+}
+
+#actions {
+  display: flex;
+  justify-content: center;
+}
+
+
+#actions button {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: auto;
+}
+
+.panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h2 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h3 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h4 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.panel-card-container {
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.card-img-top {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+
+.card-GRYFFINDOR {
+  background-color: #315f78;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.card-HUFFLEPUFF {
+  background-color: #874e87;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.card-RAVENCLAW {
+  background-color: #5c8158;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.card-SLYTHERIN {
+  background-color: #949e6f;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+#expel button {
+  background-color: black;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
