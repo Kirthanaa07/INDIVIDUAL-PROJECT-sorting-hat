@@ -4,7 +4,7 @@
 Sorting Hat allows users to add New First Year's Students and assign them all with a random houses(group). Which then also provide the users an option to Expel them to the Voldemort's Army if they want to.
 
 ## Link/screenshot of data flowchart
-
+None
 
 ## Link to Kirthana's wireframes/prototype
 No wireframes were used for this project.
