@@ -22,8 +22,9 @@
     </div>
   </header>
 
-  <form>
-    <div class="modal fade" id="sort-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <div class="modal fade" id="sort-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form>
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -33,17 +34,17 @@
           <div class="modal-body">
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Name:</label>
-              <input type="text" class="form-control" id="student-name">
+              <input type="text" class="form-control" required id="student-name">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="addStudents">Add</button>
+            <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="addStudents">Add</button>
           </div>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 
   <div id="actions">
     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
