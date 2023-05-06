@@ -120,35 +120,7 @@ h4 {
   height: 50%;
 }
 
-.card-GRYFFINDOR {
-  background-color: #315f78;
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-}
-
-.card-HUFFLEPUFF {
-  background-color: #874e87;
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-}
-
-.card-RAVENCLAW {
-  background-color: #5c8158;
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-}
-
-.card-SLYTHERIN {
-  background-color: #949e6f;
+.card {
   background: rgba(255, 255, 255, 0);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);

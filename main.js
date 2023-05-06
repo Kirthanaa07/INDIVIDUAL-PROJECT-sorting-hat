@@ -51,7 +51,7 @@ const studentHouses = ["GRYFFINDOR", "SLYTHERIN", "RAVENCLAW", "HUFFLEPUFF"];
 const cardsOnDom = (array) => {
   let domString = "";
   for (const student of array) {
-    domString += `<div id="expel" class="card card-${student.group}" style = "width:18rem;" >
+    domString += `<div id="expel" class="card" style = "width:18rem;" >
       <div class="card-body">
       <img class="card-img-top" src="assets/${student.group}.png">
         <h3 class="card-text" id="name">${student.name}</h3>
@@ -73,10 +73,9 @@ const moldyVoldyStudents = []
 const cardsOnDomVoldy = (array) => {
   let domString = "";
   for (const student of array) {
-    domString += `<div class="card card-${student.group}"  style="width:18rem;">
+    domString += `<div class="card"  style="width:18rem;">
     <img class="card-img-top" src="assets/voldemort.png" style="background-image" >
-    <h3 class="card-text" id = "name">${student.name}</h3>
-    <h4 class="card-house" id = "group">${student.group}</h4></div></div>`;
+    <h3 class="card-text" id = "name">${student.name}</h3></div></div>`;
   }
 
   renderToDom("#expelled-cards", domString);
@@ -87,11 +86,11 @@ const cardsOnDomVoldy = (array) => {
 
 function expelStudent(id) {
   const expelledStudentIndex = students.findIndex(s => s.id === id);
-  moldyVoldyStudents.push(students[expelledStudentIndex]);
+  var expelledStudent = students[expelledStudentIndex];
+  expelledStudent.group = '';
+  moldyVoldyStudents.push(expelledStudent);
   students.splice(expelledStudentIndex, 1);
   cardsOnDom(students);
-  console.log(students);
-  console.log(moldyVoldyStudents);
   cardsOnDomVoldy(moldyVoldyStudents);
 }
 
@@ -151,15 +150,19 @@ cardsOnDom(students);
 const addStudentBtn = document.querySelector("#addStudents");
 const createStudents = (e) => {
   e.preventDefault();
-  const newStudent = {
-    id: students.length + 1,
-    name: document.querySelector("#student-name").value
+  var studentName = document.querySelector("#student-name").value;
+  if (studentName) {
+    const newStudent = {
+      id: students.length + 1,
+      name: studentName
+    }
+    var randomNum = getRandomInt(0, 4);
+    var randomHouse = studentHouses[randomNum];
+    newStudent.group = randomHouse;
+    students.push(newStudent);
+    cardsOnDom(students);
   }
-  var randomNum = getRandomInt(0, 4);
-  var randomHouse = studentHouses[randomNum];
-  newStudent.group = randomHouse;
-  students.push(newStudent);
-  cardsOnDom(students);
+  document.getElementById('sort-form').reset();
 }
 
 addStudentBtn.addEventListener("click", createStudents);
