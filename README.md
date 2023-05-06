@@ -10,11 +10,11 @@ None
 No wireframes were used for this project.
 
 ## Link to the deployed project
-
+<https://kirthu-sortinghat.netlify.app>
 
 
 ## Link to the project board
-
+<https://github.com/Kirthuarun/INDIVIDUAL-PROJECT-sorting-hat>
 
 
 ## Description of the users
@@ -30,7 +30,7 @@ Any user can understand the function of the website and access them without any 
 
 
 ## List of contributors and links to their GitHub profiles
-
+<https://github.com/Kirthuarun/INDIVIDUAL-PROJECT-sorting-hat>
 
 ## Link to Loom video walkthrough of the app
 
